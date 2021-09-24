@@ -1,0 +1,25 @@
+{
+  "name": "giocoso",
+  "version": "1.0.0",
+  "description": "A music composition service website.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostvikx/giocoso.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Vikram Negi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lostvikx/giocoso/issues"
+  },
+  "homepage": "https://github.com/lostvikx/giocoso#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
