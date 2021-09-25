@@ -28,6 +28,7 @@ p {
   line-height: 1.4;
 }
 
+/* Use this class to give margins */
 .mr {
   margin: 0 0.5rem;
 }
@@ -38,6 +39,7 @@ a {
   color: var(--black);
 }
 
+/* The link class gives it cool stylings */
 .link {
   display: inline-block;
   position: relative;
@@ -61,15 +63,19 @@ a {
   transform-origin: bottom left;
 }
 
+/* Scroll up btn style */
 .scroll {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background: transparent;
+  position: sticky;
+  bottom: 0rem;
 }
 
 .scroll-btn {
-  padding: 0.5em;
-  margin-bottom: 1rem;
+  padding: 0.25em 0.5em;
+  margin-bottom: 0.5rem;
   margin-top: 1rem;
   background-color: var(--black);
   text-align: center;
@@ -77,10 +83,39 @@ a {
   border-radius: 10%;
   cursor: pointer;
   font-size: 1.25rem;
+  visibility: hidden;
+  opacity: 30%;
+}
+
+.scroll-btn:hover {
+  opacity: 80%;
 }
 
 /* showcase*/
 .showcase {
   height: 80vh;
-  background-image: none;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.05)), url("/img/showcase-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tagline {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.adj-change {
+  animation-name: bgchange;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.services {
+  height: 900px;
 }

@@ -1,0 +1,4 @@
+@keyframes bgchange {
+  from {color: white;}
+  to {background-color: var(--logo-color);}
+}

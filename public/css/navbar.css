@@ -46,7 +46,8 @@
 
 .cta-btn:hover {
   color: var(--black);
-  background: none;
+  background: var(--logo-color);
+  /* background: none; */
   box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease 0s;
 }
