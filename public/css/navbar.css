@@ -1,34 +1,48 @@
 /* navbar */
 
-.main-logo {
-  height: 2rem;
-  margin: 0.25em;
+.comp-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0.25em;
 }
 
 .nav-links {
   display: flex;
-  flex-flow: row, wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
   list-style: none;
 }
 
-.nav ul li a {
+.nav-links li a {
   padding: 0.5em;
   margin: 0 0.25em;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .nav {
   display: flex;
-  flex-flow: row, wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 0.75rem 0;
+  margin: 0.75rem 0.25rem;
 }
 
 .cta-btn {
-  background-color: #2E4057;
-  border-radius: 5%;
-  color: #F4D35E;
+  color: var(--white);
+  background: var(--black);
+  padding: 0 2em;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+}
+
+.cta-btn:hover {
+  color: var(--black);
+  background: none;
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
 }
