@@ -94,6 +94,7 @@
     margin: 0.5rem 0;
     width: 100vw;
     text-align: center;
+    /* this might cause some issue */
     height: 2rem;
     margin-top: 3rem;
   }
@@ -123,5 +124,11 @@
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-0.65rem) rotate(-45deg);
+  }
+
+  /* Disables the scroll option */
+  .stop-scroll {
+    height: 100%;
+    overflow: hidden;
   }
 }

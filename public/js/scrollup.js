@@ -11,12 +11,12 @@ function scrollToTop() {
   });
 }
 
-scrollBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  scrollToTop();
-});
+scrollBtn.addEventListener("click", scrollToTop);
 
-const heightPixels = 500;
+// This is subject to change
+const heightPixels = Math.floor(rootElement.scrollHeight / 3);
+
+// console.log(heightPixels);
 
 // Show btn on heightPixels (this needs to be modified accordingly)
 function showScrollBtn() {
