@@ -1,4 +1,69 @@
-@keyframes bgchange {
-  from {color: white;}
-  to {background-color: var(--logo-color);}
+/* The link class gives it cool stylings */
+.link {
+  display: inline-block;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@keyframes bgIn {
+  from {}
+  to {
+    background-position: left;
+    color: var(--black);
+  }
+}
+
+@keyframes bgOut {
+  from {}
+  to {
+    background-position: right;
+    color: white;
+  }
+}
+
+.bg-in {
+  color: white;
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  background-position: right;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to right, var(--logo-color) 50%, rgba(0, 0, 0, 0) 0);
+  transition: background-position 2s;
+  animation-name: bgIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.bg-out {
+  color: var(--black);
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  background-position: left;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to right, var(--logo-color) 50%, rgba(0, 0, 0, 0) 0);
+  transition: background-position 2s;
+  animation-name: bgOut;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
