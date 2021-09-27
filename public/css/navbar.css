@@ -22,6 +22,7 @@
   font-weight: 600;
 }
 
+/* Navbar blur */
 .nav {
   display: flex;
   flex-direction: row;
