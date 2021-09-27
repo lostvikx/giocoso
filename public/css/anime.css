@@ -1,4 +1,4 @@
-/* The link class gives it cool stylings */
+/* This class gives anchor tags cool stylings */
 .link {
   display: inline-block;
   position: relative;
@@ -22,6 +22,7 @@
   transform-origin: bottom left;
 }
 
+/* Showcase text animations */
 @keyframes bgIn {
   from {}
   to {
