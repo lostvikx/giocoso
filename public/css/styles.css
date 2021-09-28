@@ -47,6 +47,7 @@ a {
   background: transparent;
   position: sticky;
   bottom: 0rem;
+  display: none;
 }
 
 .scroll-btn {

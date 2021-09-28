@@ -2,6 +2,7 @@
 
 const scrollBtn = document.getElementById("scroll-up-btn");
 const rootElement = document.documentElement;
+const scrollBar = document.querySelector(".scroll");
 
 // The scroll funciton
 function scrollToTop() {
@@ -14,7 +15,8 @@ function scrollToTop() {
 scrollBtn.addEventListener("click", scrollToTop);
 
 // This is subject to change
-const heightPixels = Math.floor(rootElement.scrollHeight / 3);
+// const heightPixels = Math.floor(rootElement.scrollHeight / 3);
+const heightPixels = 200
 
 // console.log(heightPixels);
 
@@ -24,9 +26,11 @@ function showScrollBtn() {
   // console.log(rootElement.scrollTop);
 
   if (rootElement.scrollTop > heightPixels || document.body.scrollTop > heightPixels) {
+    scrollBar.style.display = "flex";
     scrollBtn.style.visibility = "visible";
   } else {
     scrollBtn.style.visibility = "hidden";
+    scrollBar.style.display = "none";
   }
 }
 
