@@ -67,25 +67,36 @@ a {
   opacity: 80%;
 }
 
-/* showcase*/
-.showcase {
-  height: 80vh;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.05)), url("/img/showcase-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.arrow-div {
+  display: flex;
+  padding: 0.1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.down-arrow {
+  text-align: center;
+  font-size: 2.5rem;
+  opacity: 70%;
+  padding: 0.1em 0.5em;
+  transition: opacity 2s ease-in-out;
+}
+
+.down-arrow:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.services {
+  /* height: 900px; */
+  padding-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.tagline {
-  color: white;
+.head-link {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  padding: 0.2em;
 }
-
-.services {
-  height: 900px;
-}
-

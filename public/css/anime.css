@@ -47,11 +47,8 @@
   background-position: right;
   background-size: 200% 200%;
   background-image: linear-gradient(to right, var(--logo-color) 50%, rgba(0, 0, 0, 0) 0);
-  transition: background-position 2s;
-  animation-name: bgIn;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  /* transition: background-position 2s; */
+  animation: bgIn 3s ease-in-out forwards;
 }
 
 .bg-out {
@@ -62,9 +59,6 @@
   background-position: left;
   background-size: 200% 200%;
   background-image: linear-gradient(to right, var(--logo-color) 50%, rgba(0, 0, 0, 0) 0);
-  transition: background-position 2s;
-  animation-name: bgOut;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  /* transition: background-position 2s; */
+  animation: bgOut 3s ease-in-out forwards;
 }
