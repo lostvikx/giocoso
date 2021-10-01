@@ -97,7 +97,10 @@ a {
   width: 75%;
   /* height: 60%; */
   padding-top: 1.5em;
-  display: grid;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* column-gap: 2rem;
+  grid-area: auto; */
 }
 
 .service-img img{
