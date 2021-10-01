@@ -23,7 +23,7 @@
 p {
   color: black;
   font-size: 0.95rem;
-  font-family: 'Lora', serif;
+  /* font-family: 'Lora', serif; */
   font-weight: 500;
   line-height: 1.4;
 }
@@ -71,12 +71,39 @@ a {
   padding: 0.1em 0.5em;
 }
 
-.services {
-  height: 900px;
-  padding-top: 4rem;
+.services-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding-top: 4em;
+}
+
+@media only screen and (max-width: 768px) {
+  .services-section {
+    padding-top: 2.75rem;
+  }
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  flex-direction: column;
+}
+
+.card {
+  width: 75%;
+  /* height: 60%; */
+  padding-top: 1.5em;
+  display: grid;
+}
+
+.service-img img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .head-link {
