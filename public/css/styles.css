@@ -94,19 +94,61 @@ a {
 }
 
 .card {
-  width: 75%;
-  /* height: 60%; */
+  width: 70%;
+  margin: 0.25em 0.5em;
   padding: 1.5em 1em;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 2fr; */
-  /* column-gap: 2rem;
-  grid-area: auto; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  column-gap: 2.25rem;
+  justify-items: center;
+  align-items: center;
 }
 
 .service-img img{
   width: 250px;
   height: 250px;
   object-fit: cover;
+}
+
+.service-overview {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25em;
+}
+
+.service-img {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.25em;
+}
+
+.service-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.service-description {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.main-btn {
+  text-align: end;
+}
+
+.inquire-cta {
+  font-size: 1.1rem;
+  padding: 0.15em 0.20em;
+}
+
+.link-arrow {
+  font-size: 0.8rem;
 }
 
 .head-link {
