@@ -96,9 +96,9 @@ a {
 .card {
   width: 75%;
   /* height: 60%; */
-  padding-top: 1.5em;
+  padding: 1.5em 1em;
   /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: 1fr 2fr; */
   /* column-gap: 2rem;
   grid-area: auto; */
 }
