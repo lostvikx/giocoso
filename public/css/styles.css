@@ -80,12 +80,6 @@ a {
   padding-top: 4em;
 }
 
-@media only screen and (max-width: 768px) {
-  .services-section {
-    padding-top: 2.75rem;
-  }
-}
-
 .service-cards {
   display: flex;
   justify-content: center;
@@ -205,5 +199,13 @@ a {
 
   .service-overview {
     padding: 0.25em 0.5em;
+  }
+
+  .services-section {
+    padding-top: 2.75rem;
+  }
+
+  .scroll-btn {
+    display: none;
   }
 }
