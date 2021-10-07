@@ -220,3 +220,16 @@ a {
     width: 70%;
   }
 }
+
+.bounce {
+  animation: bounce 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}

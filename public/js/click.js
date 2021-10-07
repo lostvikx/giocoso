@@ -1,15 +1,21 @@
 "use strict";
 
+const user = window.navigator.userAgent.toLowerCase();
 const btn = document.querySelectorAll(".click");
 
-btn.forEach(b => {
+if (user.includes("android") || user.includes("iphone")) {
 
-  b.addEventListener("click", (e) => {
-    
-    e.preventDefault();
+  console.log("on mobile");
 
-    // window.location.href = "/contact-us";
+  btn.forEach(b => {
 
-    window.open("/contact-us", "_blank");
+    b.addEventListener("click", (e) => {
+
+      e.preventDefault();
+
+      // window.location.href = "/contact-us";
+
+      window.open("/contact-us", "_blank");
+    });
   });
-});
+}
