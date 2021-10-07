@@ -165,7 +165,7 @@ a {
 }
 
 .fade-in {
-  opacity: 60%;
+  opacity: 80%;
   transition: opacity 0.25s ease-in-out;
 }
 
@@ -222,7 +222,7 @@ a {
 }
 
 .bounce {
-  animation: bounce 1s ease-in-out 0s infinite alternate;
+  animation: bounce 1.2s ease-in-out 0s infinite alternate;
 }
 
 @keyframes bounce {
