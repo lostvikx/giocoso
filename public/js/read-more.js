@@ -29,11 +29,21 @@ let text_content = service_description.map(t => {
     read_btn.addEventListener("click", (e) => {
       e.preventDefault();
 
-      // Display the entire text, if read more clicked.
-      t.innerText = new_txt + rm_txt;
-      // Change the height of the card element.
-      // The current card element only, not all of them.
-      t.parentElement.parentElement.style.height = "auto";
+      if (read_btn.textContent == "read more") {
+        // Display the entire text, if read more clicked.
+        t.innerText = new_txt + rm_txt + " ";
+        read_btn.textContent = "Read less"
+        t.insertAdjacentElement("beforeend", read_btn);
+        // Change the height of the card element.
+        // The current card element only, not all of them.
+        t.parentElement.parentElement.style.height = "auto";
+      } else {
+        t.innerText = new_txt + "...";
+        read_btn.textContent = "read more"
+        t.insertAdjacentElement("beforeend", read_btn);
+        t.parentElement.parentElement.style.height = "400px";
+      }
+      
     });
   }
 
