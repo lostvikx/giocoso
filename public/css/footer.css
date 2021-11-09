@@ -1,0 +1,35 @@
+/* :root {
+  --black: #404040;
+} */
+
+.foot {
+  padding: 1.5em 0.5em;
+  font-size: 1rem;
+  text-align: center;
+}
+
+hr {
+  width: 87.5%;
+  margin: auto;
+  color: var(--black);
+}
+
+.hearts {
+  color: rgb(230, 14, 14);
+  font-size: 1.125rem;
+}
+
+.social-media {
+  padding-top: 0.25em;
+  font-size: 1.5rem;
+  margin-bottom: 0.25em;
+  
+}
+
+.social-media a {
+  margin: 0.25em 0.15em;
+}
+
+.make-in-india span {
+  font-size: 1.125rem;
+}
