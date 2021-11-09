@@ -4,6 +4,7 @@
   --black: #404040;
   --grey: #494949;
   --white: #ffffff;
+  --blue: rgb(0, 60, 120);
 }
 
 * {
@@ -26,6 +27,18 @@ p {
   /* font-family: 'Lora', serif; */
   font-weight: 500;
   line-height: 1.4;
+}
+
+.read-more {
+  color: var(--blue);
+  font-size: 1rem;
+  /* font-family: 'Lora', serif; */
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.read-more:hover {
+  cursor: pointer;
 }
 
 /* Use this class to give margins */
@@ -90,6 +103,8 @@ a {
 
 .card {
   width: 70vw;
+  height: 400px;
+  /* height: auto; */
   margin: 0.25em 0.5em;
   padding: 1.5em 1em;
   display: grid;
@@ -181,6 +196,7 @@ a {
 
   .card {
     width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 1.5em 0;
@@ -218,6 +234,7 @@ a {
 @media only screen and (min-width: 1100px) {
   .card {
     width: 70%;
+    height: auto;
   }
 }
 
