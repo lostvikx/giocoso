@@ -2,9 +2,9 @@
 .showcase {
   height: 80vh;
   display: flex;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.05)), url("/img/showcase-bg.jpg");
   align-items: center;
   justify-content: center;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.05)), url("/img/showcase-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,6 +12,9 @@
 
 .about-show {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.05)), url("/img/about-show.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .tagline {
