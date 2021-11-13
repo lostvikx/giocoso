@@ -3,6 +3,13 @@
 // Selects
 let service_description = [...document.querySelectorAll(".service-description")];
 
+// const windowWidth = window.innerWidth;
+// let responsive = null;
+
+// (windowWidth >= 1100) ? responsive = false : responsive = true;
+
+// console.log(responsive);
+
 let text_content = service_description.map(t => {  
 
   let text = t.innerText;
@@ -19,7 +26,6 @@ let text_content = service_description.map(t => {
 
     // Add a span tag, the read more btn.
     let read_btn = document.createElement("span");
-    // read_btn.href = "";
     read_btn.textContent = "Read more";
     read_btn.className = "read-more";
 
@@ -28,6 +34,11 @@ let text_content = service_description.map(t => {
     // Add an evt listener, click evts.
     read_btn.addEventListener("click", (e) => {
       e.preventDefault();
+
+      const windowWidth = window.innerWidth;
+      let responsive = null;
+
+      (windowWidth >= 1100) ? responsive = false : responsive = true;
 
       if (read_btn.textContent == "Read more") {
         // Display the entire text, if read more clicked.
@@ -38,7 +49,10 @@ let text_content = service_description.map(t => {
         t.insertAdjacentElement("beforeend", read_btn);
         // Change the height of the card element.
         // The current card element only, not all of them.
-        t.parentElement.parentElement.style.height = "auto";
+        // Only change the card height, if not responsive.
+        if (responsive === false) {
+          t.parentElement.parentElement.style.height = "auto";
+        }
       } else {
         // Revert to the same
         t.innerText = new_txt + "... ";
@@ -48,7 +62,10 @@ let text_content = service_description.map(t => {
         t.insertAdjacentElement("beforeend", read_btn);
         // Change the height of the card element to 400px.
         // The current card element only, not all of them.
-        t.parentElement.parentElement.style.height = "400px";
+        // If not responsive, then change it back to 400px.
+        if (responsive === false) {
+          t.parentElement.parentElement.style.height = "400px";
+        }
       }
     });
   }
