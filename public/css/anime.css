@@ -62,3 +62,16 @@
   /* transition: background-position 2s; */
   animation: bgOut 3s ease-in-out forwards;
 }
+
+.bounce {
+  animation: bounce 1.2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}

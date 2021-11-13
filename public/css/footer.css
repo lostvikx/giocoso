@@ -1,5 +1,5 @@
 .foot {
-  padding: 1.5em 0.5em;
+  padding: 1.75em 0.5em;
   font-size: 1rem;
   text-align: center;
 }
@@ -8,6 +8,7 @@ hr {
   width: 87.5%;
   margin: auto;
   border-color: #eee;
+  opacity: 0.8;
 }
 
 .hearts {

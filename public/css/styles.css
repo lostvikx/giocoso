@@ -91,6 +91,7 @@ a {
   justify-content: center;
   flex-direction: column;
   padding-top: 4em;
+  margin-bottom: 4em;
 }
 
 .service-cards {
@@ -102,9 +103,9 @@ a {
 }
 
 .card {
-  width: 70vw;
-  height: 400px;
-  /* height: auto; */
+  width: 70%;
+  /* height: 400px; */
+  height: auto;
   margin: 0.25em 0.5em;
   padding: 1.5em 1em;
   display: grid;
@@ -189,13 +190,13 @@ a {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
-.service-cards {
-  padding: 1em 0;
-}
+@media only screen and (max-width: 900px) {
+  .service-cards {
+    padding: 1em 0;
+  }
 
   .card {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -226,27 +227,14 @@ a {
     padding-top: 5rem;
   }
 
-  .scroll-btn {
+  /* .scroll-btn {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1100px) {
   .card {
     width: 70%;
-    height: auto;
-  }
-}
-
-.bounce {
-  animation: bounce 1.2s ease-in-out 0s infinite alternate;
-}
-
-@keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(10px);
+    height: 400px;
   }
 }

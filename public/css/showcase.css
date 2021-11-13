@@ -1,19 +1,28 @@
 /* Showcase */
 .showcase {
   height: 80vh;
+  display: flex;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.05)), url("/img/showcase-bg.jpg");
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.about-show {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.05)), url("/img/about-show.jpg");
 }
 
 .tagline {
   color: white;
   text-align: center;
   font-size: 2.5rem;
+}
+
+.simple-tagline {
+  color: var(--black);
+  background: var(--white);
 }
 
 @media only screen and (max-height: 800px) {
