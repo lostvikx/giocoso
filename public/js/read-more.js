@@ -1,15 +1,9 @@
 "use strict";
 
-// Selects
+// Selects all p tags, as an array.
 let service_description = [...document.querySelectorAll(".service-description")];
 
-// const windowWidth = window.innerWidth;
-// let responsive = null;
-
-// (windowWidth >= 1100) ? responsive = false : responsive = true;
-
-// console.log(responsive);
-
+// Functional Programming OP!
 let text_content = service_description.map(t => {  
 
   let text = t.innerText;
@@ -35,9 +29,11 @@ let text_content = service_description.map(t => {
     read_btn.addEventListener("click", (e) => {
       e.preventDefault();
 
+      // Gets the window width
       const windowWidth = window.innerWidth;
       let responsive = null;
 
+      // If statement ES6!
       (windowWidth >= 1100) ? responsive = false : responsive = true;
 
       if (read_btn.textContent == "Read more") {
@@ -72,5 +68,3 @@ let text_content = service_description.map(t => {
 
   return t;
 });
-
-// console.log(text_content);
