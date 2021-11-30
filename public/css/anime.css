@@ -76,7 +76,7 @@
   }
 }
 
-.container {
+/* .container {
   animation: slideInFromLeft 1s ease-out 0s 1;
 }
 
@@ -87,4 +87,4 @@
   to {
     transform: translateX(0%);
   }
-}
+} */
